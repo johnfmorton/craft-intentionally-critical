@@ -1,0 +1,49 @@
+{
+  "name": "johnfmorton/craft-intentionally-critical",
+  "description": "A plugin with an intentionally critical update for testing purposes.",
+  "type": "craft-plugin",
+  "version": "5.0.0",
+  "license": "proprietary",
+  "support": {
+    "name": "John F Morton",
+    "email": "john@johnfmorton.com",
+    "issues": "https://github.com/johnfmorton/craft-intentionally-critical/issues?state=open",
+    "source": "https://github.com/johnfmorton/craft-intentionally-critical",
+    "docs": "https://github.com/johnfmorton/craft-intentionally-critical",
+    "rss": "https://github.com/johnfmorton/craft-intentionally-critical/releases.atom"
+  },
+  "require": {
+    "php": ">=8.2",
+    "craftcms/cms": "^5.4.0"
+  },
+  "require-dev": {
+    "craftcms/ecs": "dev-main",
+    "craftcms/phpstan": "dev-main"
+  },
+  "autoload": {
+    "psr-4": {
+      "johnfmorton\\craftintentionallycritical\\": "src/"
+    }
+  },
+  "extra": {
+    "handle": "intentionally-critical",
+    "name": "Intentionally Critical",
+    "developer": "John F Morton",
+    "documentationUrl": "https://github.com/johnfmorton/"
+  },
+  "scripts": {
+    "check-cs": "ecs check --ansi",
+    "fix-cs": "ecs check --ansi --fix",
+    "phpstan": "phpstan --memory-limit=1G"
+  },
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "8.2"
+    },
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
+    }
+  }
+}
