@@ -2,7 +2,7 @@
   "name": "johnfmorton/craft-intentionally-critical",
   "description": "A plugin with an intentionally critical update for testing purposes.",
   "type": "craft-plugin",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "license": "proprietary",
   "support": {
     "name": "John F Morton",
